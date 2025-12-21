@@ -1,0 +1,4 @@
+rootProject.name = "kultura-backend"
+
+include("service-discovery", "api-gateway", "identity", "catalog-service")
+

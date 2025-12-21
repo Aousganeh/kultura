@@ -1,0 +1,17 @@
+.git
+.gitignore
+node_modules
+build
+out
+.gradle
+**/.gradle
+**/build
+**/out
+**/.idea
+**/.vscode
+**/node_modules
+**/*.iml
+**/*~
+**/.DS_Store
+frontend
+

@@ -1,0 +1,287 @@
+.checkout {
+  width: 400px;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.option {
+  align-self: stretch;
+  min-height: 75px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.dashboardSquare01Parent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboardSquare01Icon {
+  height: 19px;
+  width: 19px;
+  position: relative;
+}
+
+.stolunNmrsi {
+  position: relative;
+  font-weight: 400;
+  font-size: clamp(12px, 1.5vw, 16px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowRight01SharpIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.orderParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.05);
+  -ms-overflow-style: scrollbar;
+}
+
+.orderParent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.orderParent::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.orderParent::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.orderParent::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.order {
+  align-self: stretch;
+  min-height: 53px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.addvariant3Parent {
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.addvariant3Icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 12.5px;
+}
+
+.miniAhPlovParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.x1 {
+  position: relative;
+  font-weight: 400;
+  color: #7b7b7b;
+  font-size: clamp(11px, 1.4vw, 14px);
+  flex-shrink: 0;
+}
+
+.hesabParent {
+  align-self: stretch;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.hesab {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 17px;
+  flex-shrink: 0;
+}
+
+.hesabGroup {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hesab2 {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.azn6 {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.servisHaqq10 {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.azn7 {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 500;
+  white-space: pre-wrap;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.hesabChild {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-top: 2px dashed #000;
+  box-sizing: border-box;
+}
+
+.mumiHesab {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.dymlr {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: Poppins;
+}
+
+.button {
+  align-self: stretch;
+  min-height: 58px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  flex-shrink: 0;
+}
+
+.daxilOl {
+  position: relative;
+  letter-spacing: -0.41px;
+  line-height: 1.2;
+  font-weight: 400;
+  flex-shrink: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+  white-space: nowrap;
+}
+
+.button2 {
+  align-self: stretch;
+  min-height: 58px;
+  border-radius: 15px;
+  background-color: #e8aeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+

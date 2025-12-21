@@ -1,0 +1,798 @@
+/* Background Container */
+.backgroundContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Back Layer */
+.backLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Ellipse Base */
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Ellipse 1 - Top Left */
+.ellipse1 {
+  width: 313px;
+  height: 313px;
+  left: 29.3%;
+  top: 12.9%;
+  background: #E8AEFF;
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 2 - Top Left Inner */
+.ellipse2 {
+  width: 152px;
+  height: 152px;
+  left: 31.7%;
+  top: 14.6%;
+  background: #D363FF;
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Ellipse 3 - Center Right */
+.ellipse3 {
+  width: 306px;
+  height: 306px;
+  left: 44.8%;
+  top: 52.6%;
+  background: #E8AEFF;
+  transform: rotate(-180deg);
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 4 - Center Right Inner */
+.ellipse4 {
+  width: 169px;
+  height: 170px;
+  left: 52%;
+  top: 64.3%;
+  background: #D363FF;
+  transform: rotate(-180deg);
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Ellipse 5 - Top Right */
+.ellipse5 {
+  width: 313px;
+  height: 313px;
+  left: 62.2%;
+  top: 16.1%;
+  background: #E8AEFF;
+  transform: rotate(-105deg);
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 6 - Top Right Inner */
+.ellipse6 {
+  width: 152px;
+  height: 152px;
+  left: 65.6%;
+  top: 31.8%;
+  background: #D363FF;
+  transform: rotate(-105deg);
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Ellipse 7 - Top Far Right */
+.ellipse7 {
+  width: 306px;
+  height: 306px;
+  left: 85.5%;
+  top: -14.4%;
+  background: #E8AEFF;
+  transform: rotate(75deg);
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 8 - Top Far Right Inner */
+.ellipse8 {
+  width: 169px;
+  height: 170px;
+  left: 94.2%;
+  top: -10.7%;
+  background: #D363FF;
+  transform: rotate(75deg);
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Ellipse 9 - Bottom Left */
+.ellipse9 {
+  width: 313px;
+  height: 313px;
+  left: -11.2%;
+  top: 77.4%;
+  background: #E8AEFF;
+  transform: rotate(-105deg);
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 10 - Bottom Left Inner */
+.ellipse10 {
+  width: 152px;
+  height: 152px;
+  left: -7.8%;
+  top: 93%;
+  background: #D363FF;
+  transform: rotate(-105deg);
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Ellipse 11 - Center Left */
+.ellipse11 {
+  width: 306px;
+  height: 306px;
+  left: 12.2%;
+  top: 46.9%;
+  background: #E8AEFF;
+  transform: rotate(75deg);
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+/* Ellipse 12 - Center Left Inner */
+.ellipse12 {
+  width: 169px;
+  height: 170px;
+  left: 20.8%;
+  top: 50.5%;
+  background: #D363FF;
+  transform: rotate(75deg);
+  filter: blur(40px);
+  opacity: 0.7;
+}
+
+/* Additional Ellipses - Desktop Only */
+.ellipse13 {
+  width: 280px;
+  height: 280px;
+  left: 50%;
+  top: 20%;
+  background: #E8AEFF;
+  transform: rotate(45deg);
+  filter: blur(70px);
+  opacity: 0.6;
+  display: none;
+}
+
+.ellipse14 {
+  width: 140px;
+  height: 140px;
+  left: 52%;
+  top: 22%;
+  background: #D363FF;
+  transform: rotate(45deg);
+  filter: blur(50px);
+  opacity: 0.5;
+  display: none;
+}
+
+.ellipse15 {
+  width: 260px;
+  height: 260px;
+  left: 35%;
+  top: 70%;
+  background: #E8AEFF;
+  transform: rotate(-45deg);
+  filter: blur(70px);
+  opacity: 0.6;
+  display: none;
+}
+
+.ellipse16 {
+  width: 130px;
+  height: 130px;
+  left: 37%;
+  top: 72%;
+  background: #D363FF;
+  transform: rotate(-45deg);
+  filter: blur(50px);
+  opacity: 0.5;
+  display: none;
+}
+
+/* Show additional ellipses on larger screens */
+@media (min-width: 1440px) {
+  .ellipse13,
+  .ellipse14,
+  .ellipse15,
+  .ellipse16 {
+    display: block;
+  }
+}
+
+/* Show some additional ellipses on tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ellipse13 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 25%;
+    filter: blur(50px);
+  }
+  
+  .ellipse15 {
+    display: block;
+    width: 180px;
+    height: 180px;
+    left: 30%;
+    top: 75%;
+    filter: blur(50px);
+  }
+}
+
+/* Glass Morphism Overlay */
+.glassOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(78.55px);
+  -webkit-backdrop-filter: blur(78.55px);
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 91px 1rem 0 1rem;
+}
+
+/* Logo Container */
+.logoContainer {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Main Heading */
+.mainHeading {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.408px;
+  color: #000000;
+  max-width: 559px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Container */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 30px;
+  gap: 24px;
+  width: 100%;
+  max-width: 440px;
+  background: #000000;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 150px;
+  gap: 10px;
+  width: 100%;
+  max-width: 380px;
+  height: 58px;
+  border-radius: 33px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -0.408px;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btnPrimary {
+  background: #FFFFFF;
+  color: #000000;
+  order: 0;
+}
+
+.btnSecondary {
+  background: #D363FF;
+  color: #FFFFFF;
+  order: 1;
+}
+
+/* Responsive Design - Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .ellipse1 {
+    left: 29.3%;
+    top: 12.9%;
+  }
+  
+  .ellipse2 {
+    left: 31.7%;
+    top: 14.6%;
+  }
+  
+  .ellipse3 {
+    left: 44.8%;
+    top: 52.6%;
+  }
+  
+  .ellipse4 {
+    left: 52%;
+    top: 64.3%;
+  }
+  
+  .ellipse5 {
+    left: 62.2%;
+    top: 16.1%;
+  }
+  
+  .ellipse6 {
+    left: 65.6%;
+    top: 31.8%;
+  }
+  
+  .ellipse7 {
+    left: 85.5%;
+    top: -14.4%;
+  }
+  
+  .ellipse8 {
+    left: 94.2%;
+    top: -10.7%;
+  }
+  
+  .ellipse9 {
+    left: -11.2%;
+    top: 77.4%;
+  }
+  
+  .ellipse10 {
+    left: -7.8%;
+    top: 93%;
+  }
+  
+  .ellipse11 {
+    left: 12.2%;
+    top: 46.9%;
+  }
+  
+  .ellipse12 {
+    left: 20.8%;
+    top: 50.5%;
+  }
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 1024px) {
+  .mainHeading {
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+
+  .buttonContainer {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .btn {
+    padding: 5px 100px;
+    max-width: 100%;
+  }
+
+  .ellipse {
+    opacity: 0.7;
+  }
+
+  /* Scale down and reposition ellipses for tablet */
+  .ellipse1, .ellipse5, .ellipse9 {
+    width: 250px;
+    height: 250px;
+    filter: blur(50px);
+  }
+
+  .ellipse2, .ellipse6, .ellipse10 {
+    width: 122px;
+    height: 122px;
+    filter: blur(35px);
+  }
+
+  .ellipse3, .ellipse7, .ellipse11 {
+    width: 245px;
+    height: 245px;
+    filter: blur(50px);
+  }
+
+  .ellipse4, .ellipse8, .ellipse12 {
+    width: 135px;
+    height: 136px;
+    filter: blur(35px);
+  }
+  
+  /* Reposition for tablet */
+  .ellipse1 {
+    left: 20%;
+    top: 10%;
+  }
+  
+  .ellipse2 {
+    left: 22%;
+    top: 12%;
+  }
+  
+  .ellipse3 {
+    left: 50%;
+    top: 50%;
+  }
+  
+  .ellipse4 {
+    left: 55%;
+    top: 60%;
+  }
+  
+  .ellipse5 {
+    left: 70%;
+    top: 15%;
+  }
+  
+  .ellipse6 {
+    left: 72%;
+    top: 28%;
+  }
+  
+  .ellipse7 {
+    left: 90%;
+    top: -10%;
+  }
+  
+  .ellipse8 {
+    left: 95%;
+    top: -8%;
+  }
+  
+  .ellipse9 {
+    left: -8%;
+    top: 75%;
+  }
+  
+  .ellipse10 {
+    left: -5%;
+    top: 88%;
+  }
+  
+  .ellipse11 {
+    left: 8%;
+    top: 45%;
+  }
+  
+  .ellipse12 {
+    left: 15%;
+    top: 48%;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 95%;
+  }
+
+  .buttonContainer {
+    max-width: 100%;
+    border-radius: 30px 30px 0 0;
+    padding: 24px 16px;
+    gap: 16px;
+  }
+
+  .btn {
+    height: 52px;
+    font-size: 14px;
+    padding: 5px 80px;
+  }
+
+  .logoContainer {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.5rem;
+  }
+
+  .ellipse {
+    opacity: 0.6;
+  }
+
+  /* Further scale down ellipses for mobile */
+  .ellipse1, .ellipse5, .ellipse9 {
+    width: 180px;
+    height: 180px;
+    filter: blur(40px);
+  }
+
+  .ellipse2, .ellipse6, .ellipse10 {
+    width: 88px;
+    height: 88px;
+    filter: blur(30px);
+  }
+
+  .ellipse3, .ellipse7, .ellipse11 {
+    width: 176px;
+    height: 176px;
+    filter: blur(40px);
+  }
+
+  .ellipse4, .ellipse8, .ellipse12 {
+    width: 97px;
+    height: 98px;
+    filter: blur(30px);
+  }
+
+  /* Reposition for mobile - more compact */
+  .ellipse1 {
+    left: 5%;
+    top: 8%;
+  }
+
+  .ellipse2 {
+    left: 7%;
+    top: 10%;
+  }
+
+  .ellipse3 {
+    left: 55%;
+    top: 45%;
+  }
+
+  .ellipse4 {
+    left: 60%;
+    top: 55%;
+  }
+
+  .ellipse5 {
+    left: 75%;
+    top: 12%;
+  }
+
+  .ellipse6 {
+    left: 78%;
+    top: 25%;
+  }
+
+  .ellipse7 {
+    left: 85%;
+    top: -8%;
+  }
+
+  .ellipse8 {
+    left: 90%;
+    top: -5%;
+  }
+
+  .ellipse9 {
+    left: -5%;
+    top: 70%;
+  }
+
+  .ellipse10 {
+    left: -2%;
+    top: 80%;
+  }
+
+  .ellipse11 {
+    left: 2%;
+    top: 40%;
+  }
+
+  .ellipse12 {
+    left: 8%;
+    top: 45%;
+  }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .buttonContainer {
+    padding: 20px 12px;
+    gap: 12px;
+  }
+
+  .btn {
+    height: 48px;
+    font-size: 14px;
+    padding: 5px 60px;
+  }
+
+  .logoContainer {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  .ellipse {
+    opacity: 0.5;
+  }
+
+  /* Even smaller ellipses for small mobile */
+  .ellipse1, .ellipse5, .ellipse9 {
+    width: 120px;
+    height: 120px;
+    filter: blur(30px);
+  }
+
+  .ellipse2, .ellipse6, .ellipse10 {
+    width: 58px;
+    height: 58px;
+    filter: blur(20px);
+  }
+
+  .ellipse3, .ellipse7, .ellipse11 {
+    width: 118px;
+    height: 118px;
+    filter: blur(30px);
+  }
+
+  .ellipse4, .ellipse8, .ellipse12 {
+    width: 65px;
+    height: 66px;
+    filter: blur(20px);
+  }
+  
+  /* Reposition for small mobile - minimal spread */
+  .ellipse1 {
+    left: 0%;
+    top: 10%;
+  }
+
+  .ellipse2 {
+    left: 3%;
+    top: 12%;
+  }
+
+  .ellipse3 {
+    left: 60%;
+    top: 50%;
+  }
+
+  .ellipse4 {
+    left: 65%;
+    top: 60%;
+  }
+
+  .ellipse5 {
+    left: 80%;
+    top: 15%;
+  }
+
+  .ellipse6 {
+    left: 83%;
+    top: 28%;
+  }
+
+  .ellipse7 {
+    left: 88%;
+    top: -5%;
+  }
+
+  .ellipse8 {
+    left: 92%;
+    top: -2%;
+  }
+
+  .ellipse9 {
+    left: -2%;
+    top: 75%;
+  }
+
+  .ellipse10 {
+    left: 1%;
+    top: 85%;
+  }
+
+  .ellipse11 {
+    left: 0%;
+    top: 45%;
+  }
+
+  .ellipse12 {
+    left: 5%;
+    top: 50%;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .contentWrapper {
+    padding: 1rem;
+  }
+
+  .mainHeading {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+  }
+
+  .buttonContainer {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .logoContainer {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+}

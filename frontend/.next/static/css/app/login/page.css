@@ -1,0 +1,610 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/login/page.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.page_loginContainer__bdVix {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background: #F2F2F7;
+  display: flex;
+  overflow: hidden;
+}
+
+.page_leftSide__aTsfO {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 90px 94px;
+  max-width: 600px;
+  position: relative;
+  z-index: 10;
+}
+
+.page_backButton__3lU46 {
+  position: absolute;
+  left: 94px;
+  top: 246px;
+  background: #F2F2F7;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 32px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.page_backButton__3lU46:hover {
+  transform: scale(1.1);
+}
+
+.page_backButton__3lU46:active {
+  transform: scale(0.95);
+}
+
+.page_backArrowIcon__MA_bV {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page_logoContainer__E0xaJ {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 90px;
+  top: 90px;
+}
+
+.page_logo__csjIu {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page_loginForm__fyFkF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 380px;
+  margin-top: 235px;
+}
+
+.page_loginTitle__hyfgN {
+  width: 100%;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.408px;
+  color: #000000;
+  margin: 0;
+}
+
+.page_fields__jpg5u {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  width: 100%;
+}
+
+.page_inputWrapper__Fgvfi {
+  position: relative;
+  width: 100%;
+}
+
+.page_inputLabel__5eDOv {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.408px;
+  color: #7B7B7B;
+  z-index: 2;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #FFFFFF;
+  padding: 0 4px;
+  transform-origin: left center;
+  will-change: transform, font-size, top;
+  white-space: nowrap;
+}
+
+
+/* Input Container */
+.page_inputContainer__4rgtD {
+  position: relative;
+  width: 100%;
+}
+
+/* Input Indicator */
+.page_inputIndicator__Ccyjl {
+  position: absolute;
+  width: 2px;
+  height: 18px;
+  left: 16px;
+  top: 26px;
+  background: #E8AEFF;
+  border-radius: 19px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Input */
+.page_input__pky70 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 58px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F1;
+  border-radius: 20px;
+  padding: 0 15px 0 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 58px;
+  letter-spacing: -0.408px;
+  color: #000000;
+  outline: none;
+  transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), line-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page_input__pky70:not(:-moz-placeholder) {
+  padding-top: 22px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+
+.page_input__pky70:focus,
+.page_input__pky70:not(:placeholder-shown) {
+  padding-top: 22px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+
+.page_input__pky70:not(:-moz-placeholder) + .page_inputLabel__5eDOv {
+  top: 8px;
+  transform: translateY(0) scale(0.75);
+  font-size: 12px;
+  line-height: 1;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page_input__pky70:focus + .page_inputLabel__5eDOv,
+.page_input__pky70:not(:placeholder-shown) + .page_inputLabel__5eDOv {
+  top: 8px;
+  transform: translateY(0) scale(0.75);
+  font-size: 12px;
+  line-height: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page_input__pky70::-moz-placeholder {
+  color: transparent;
+}
+
+.page_input__pky70::placeholder {
+  color: transparent;
+}
+
+/* Forgot Password Container */
+.page_forgotPasswordContainer__s_S6j {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page_forgotPasswordText__14uze {
+  color: #000000;
+}
+
+.page_forgotPasswordLink__ilf5j {
+  color: #D363FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.page_forgotPasswordLink__ilf5j:hover {
+  color: #E8AEFF;
+  text-decoration: underline;
+}
+
+/* Login Button */
+.page_loginButton__CelAH {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 150px;
+  gap: 10px;
+  width: 100%;
+  height: 58px;
+  background: #E8AEFF;
+  border-radius: 33px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -0.408px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page_loginButton__CelAH:hover {
+  background: #D363FF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 174, 255, 0.4);
+}
+
+.page_loginButton__CelAH:active {
+  transform: translateY(0);
+}
+
+/* Right Side - Image */
+.page_rightSide__0pesC {
+  flex: 1;
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.page_imageWrapper__UNyI2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.page_interiorImage__a7v6O {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 1024px) {
+  .page_loginContainer__bdVix {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page_leftSide__aTsfO {
+    padding: 60px 40px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page_backButton__3lU46 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+  }
+
+  .page_logoContainer__E0xaJ {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+  }
+
+  .page_loginForm__fyFkF {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0;
+    align-self: center;
+    gap: 20px;
+  }
+
+  .page_loginTitle__hyfgN {
+    font-size: 32px;
+    line-height: 40px;
+    height: auto;
+  }
+
+  .page_fields__jpg5u {
+    gap: 20px;
+  }
+
+  .page_input__pky70 {
+    padding: 0 12px 0 16px;
+    border-radius: 18px;
+  }
+
+  .page_inputLabel__5eDOv {
+    left: 16px;
+    font-size: 15px;
+  }
+
+  .page_forgotPasswordContainer__s_S6j {
+    font-size: 15px;
+  }
+
+  .page_forgotPasswordText__14uze,
+  .page_forgotPasswordLink__ilf5j {
+    font-size: 15px;
+  }
+
+  .page_loginButton__CelAH {
+    height: 54px;
+    font-size: 15px;
+    padding: 5px 120px;
+    border-radius: 30px;
+  }
+
+  .page_rightSide__0pesC {
+    display: none;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  .page_loginContainer__bdVix {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page_leftSide__aTsfO {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .page_backButton__3lU46 {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .page_logoContainer__E0xaJ {
+    display: none;
+  }
+
+  .page_loginForm__fyFkF {
+    margin-top: 0;
+    gap: 18px;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .page_loginTitle__hyfgN {
+    font-size: 28px;
+    line-height: 36px;
+    height: auto;
+  }
+
+  .page_fields__jpg5u {
+    gap: 18px;
+    width: 100%;
+  }
+
+  .page_input__pky70 {
+    height: 52px;
+    font-size: 14px;
+    padding: 0 12px 0 16px;
+    line-height: 52px;
+  }
+
+  .page_input__pky70:not(:-moz-placeholder) {
+    padding-top: 18px;
+    padding-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .page_input__pky70:focus,
+  .page_input__pky70:not(:placeholder-shown) {
+    padding-top: 18px;
+    padding-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .page_inputLabel__5eDOv {
+    left: 16px;
+    font-size: 14px;
+  }
+
+  .page_input__pky70:not(:-moz-placeholder) + .page_inputLabel__5eDOv {
+    top: 6px;
+    font-size: 11px;
+  }
+
+  .page_input__pky70:focus + .page_inputLabel__5eDOv,
+  .page_input__pky70:not(:placeholder-shown) + .page_inputLabel__5eDOv {
+    top: 6px;
+    font-size: 11px;
+  }
+
+  .page_loginButton__CelAH {
+    height: 52px;
+    font-size: 14px;
+    padding: 5px 80px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page_forgotPasswordContainer__s_S6j {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .page_forgotPasswordText__14uze,
+  .page_forgotPasswordLink__ilf5j {
+    font-size: 14px;
+  }
+
+  .page_input__pky70 {
+    border-radius: 18px;
+  }
+
+  .page_rightSide__0pesC {
+    display: none;
+  }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 480px) {
+  .page_loginContainer__bdVix {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page_leftSide__aTsfO {
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .page_backButton__3lU46 {
+    position: absolute;
+    left: 16px;
+    top: 30px;
+    width: 28px;
+    height: 18px;
+  }
+
+  .page_logoContainer__E0xaJ {
+    display: none;
+  }
+
+  .page_loginForm__fyFkF {
+    margin-top: 0;
+    gap: 14px;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .page_loginTitle__hyfgN {
+    font-size: 24px;
+    line-height: 32px;
+    height: auto;
+  }
+
+  .page_fields__jpg5u {
+    gap: 14px;
+    width: 100%;
+  }
+
+  .page_input__pky70 {
+    height: 48px;
+    font-size: 14px;
+    padding: 0 12px 0 16px;
+    line-height: 48px;
+  }
+
+  .page_input__pky70:not(:-moz-placeholder) {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .page_input__pky70:focus,
+  .page_input__pky70:not(:placeholder-shown) {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .page_inputLabel__5eDOv {
+    font-size: 14px;
+    left: 16px;
+  }
+
+  .page_input__pky70:not(:-moz-placeholder) + .page_inputLabel__5eDOv {
+    top: 5px;
+    font-size: 10px;
+  }
+
+  .page_input__pky70:focus + .page_inputLabel__5eDOv,
+  .page_input__pky70:not(:placeholder-shown) + .page_inputLabel__5eDOv {
+    top: 5px;
+    font-size: 10px;
+  }
+
+  .page_inputIndicator__Ccyjl {
+    left: 12px;
+    top: 22px;
+    height: 16px;
+  }
+
+  .page_loginButton__CelAH {
+    height: 48px;
+    font-size: 14px;
+    padding: 5px 60px;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page_forgotPasswordContainer__s_S6j {
+    font-size: 13px;
+    width: 100%;
+  }
+  
+  .page_forgotPasswordText__14uze,
+  .page_forgotPasswordLink__ilf5j {
+    font-size: 13px;
+  }
+
+  .page_input__pky70 {
+    border-radius: 16px;
+  }
+
+  .page_rightSide__0pesC {
+    display: none;
+  }
+}
+
+

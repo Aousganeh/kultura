@@ -1,0 +1,264 @@
+/* Collapsed state */
+.property1closedMain {
+  width: 106px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.property1closedMainChild {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #fff;
+  border: 1px solid #f2f2f1;
+  box-sizing: border-box;
+  width: 106px;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.property1closedMainInner {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  transition: left 0.3s ease;
+}
+
+/* Expanded state */
+.property1openedReport {
+  width: 214px;
+  height: 100vh;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+  color: #141b34;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.property1openedReportChild {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #fff;
+  border: 1px solid #f2f2f1;
+  box-sizing: border-box;
+  width: 214px;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.property1openedReportInner {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  transition: left 0.3s ease;
+}
+
+/* Tabs container */
+.tabs {
+  position: absolute;
+  top: 90px;
+  left: 33px;
+  right: 0;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: top 0.3s ease, bottom 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.05);
+  -ms-overflow-style: scrollbar;
+}
+
+.tabs::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tabs::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.tabs::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Make scrollbar more visible on small screens */
+@media (max-height: 800px) {
+  .tabs {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.1);
+  }
+
+  .tabs::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .tabs::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .tabs::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .tabs::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.property1openedReport .tabs {
+  top: 90px;
+  left: 33px;
+  right: 0;
+  bottom: 32px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Collapsed navigation */
+.mainParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 21px;
+}
+
+.mainIcon {
+  width: 41px;
+  height: 41px;
+  border-radius: 15px;
+}
+
+.guestsIcon {
+  align-self: stretch;
+  height: 41px;
+  border-radius: 15px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Expanded navigation */
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.nav.collapsed .sasShif {
+  opacity: 0;
+  max-width: 0;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.15s ease, max-width 0.25s ease;
+}
+
+.nav:not(.collapsed) .sasShif {
+  opacity: 1;
+  max-width: 200px;
+  transition: opacity 0.25s ease 0.1s, max-width 0.3s ease 0.1s;
+}
+
+.nav .sasShif {
+  font-weight: 400 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.main {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 41px;
+  height: 41px;
+  border-radius: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sasShif {
+  position: relative;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.guests {
+  align-self: stretch;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.icon2 {
+  width: 41px;
+  height: 41px;
+  border-radius: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.report {
+  align-self: stretch;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 10px;
+  color: #d363ff;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.tables {
+  align-self: stretch;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
